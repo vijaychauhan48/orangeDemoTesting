@@ -14,7 +14,7 @@ import java.util.Properties;
  */
 public class ConfigDataProvider {
 	
-	Properties prop;
+	static Properties prop;
 	
 	public ConfigDataProvider(){
 		
@@ -26,31 +26,36 @@ public class ConfigDataProvider {
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			System.out.println("Exception is: "+e.getMessage());
-		}
+		}	
 	}
 	
-	public String getAppUrl(){
+	public static String getAppUrl(){
 		
 		String url=prop.getProperty("url");
 		return url;
 	}
 	
-	public String getChromePath(){
+	public static String getChromePath(){
 		String chromePath=prop.getProperty("chromePath");
 		
 		return chromePath;
 	}
 	
-	public String getfirefoxPath(){
+	public static String getfirefoxPath(){
 		String firefoxPath=prop.getProperty("firefoxPath");
 		
 		return firefoxPath;
 	}
 	
-	public String getIEPath(){
+	public static String getIEPath(){
 		String iePath=prop.getProperty("iePath");
 		
 		return iePath;
+	}
+	
+	public static String selectBrowser(){
+		String browser=prop.getProperty("browser");
+		return browser;
 	}
 
 }
