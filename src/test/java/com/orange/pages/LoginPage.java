@@ -4,7 +4,9 @@
 package com.orange.pages;
 
 import org.openqa.selenium.WebElement;
+
 import com.easyFrame.dataProvider.ExcelDataProvider;
+
 import org.openqa.selenium.support.FindBy;
 /**
  * @author cyrus
@@ -31,10 +33,12 @@ public class LoginPage extends BaseClass{
 	}
 	public void LoginToOrange(){
 		
-	/*	typeInto(txtUserName, username);
-		typeInto(txtPassword, password);*/
-		typeInto(txtUserName,ExcelDataProvider.getData("Login", 2, 1));
-		typeInto(txtPassword,ExcelDataProvider.getData("Login", 2, 2));
+		//typeInto(txtUserName, "Admin");
+		//typeInto(txtPassword, "admin");
+		ExcelDataProvider xl=new ExcelDataProvider();
+		typeInto(txtUserName,xl.getData("Login", 2, 1));
+		typeInto(txtPassword,xl.getData("Login", 2, 2));
+		
 		clickOn(btnLogin);
 	}
 	

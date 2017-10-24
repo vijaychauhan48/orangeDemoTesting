@@ -25,6 +25,7 @@ public class BaseTest {
 	public void setUp(){
 	
 		driver=BrowserFactory.getBrowser("chrome");
+		driver.get(ConfigDataProvider.getAppUrl());
 		
 	}
 	

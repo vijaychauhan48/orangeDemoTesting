@@ -15,7 +15,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
  */
 public class ExcelDataProvider {
 	
-	private static XSSFWorkbook wb;
+	public XSSFWorkbook wb;
 	
 	public ExcelDataProvider(){
 		
@@ -24,20 +24,21 @@ public class ExcelDataProvider {
 		try {
 			FileInputStream fis=new FileInputStream(src);
 			wb=new XSSFWorkbook(fis);
+			System.out.println("hellllo");
 		} 
 		catch (Exception e) {
 			System.out.println("Exception is: "+e.getMessage());
 		}
 	}
 	
-	public static String getData(int sheetIndex, int row, int col){
+	public String getData(int sheetIndex, int row, int col){
 		
 		String data=wb.getSheetAt(sheetIndex).getRow(row).getCell(col).getStringCellValue();
 		
 		return data;
 	}
 	
-	public static String getData(String sheetName, int row, int col){
+	public String getData(String sheetName, int row, int col){
 		
 		String data=wb.getSheet(sheetName).getRow(row).getCell(col).getStringCellValue();
 		

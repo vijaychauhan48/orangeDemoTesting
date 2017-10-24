@@ -42,5 +42,6 @@
 			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/cyrus/.m2/repository/com/easyFrame/hybrid/com.easyFrame.hybrid/0.0.1-SNAPSHOT/com.easyFrame.hybrid-0.0.1-SNAPSHOT.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
