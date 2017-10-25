@@ -10,18 +10,11 @@
         <artifactId>selenium-java</artifactId>
         <version>3.5.3</version>
 </dependency>
-	
-	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-support -->
 <dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-support</artifactId>
-    <version>2.0a7</version>
+<groupId>com.easyFrame.hybrid</groupId>
+  <artifactId>com.easyFrame.hybrid</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
 </dependency>
-	 <dependency>
-      <groupId>com.google.guava</groupId>
-      <artifactId>guava</artifactId>
-      <version>16.0.1</version>
-    </dependency>
 	
 <dependency>
   <groupId>org.testng</groupId>
